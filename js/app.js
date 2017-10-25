@@ -1,6 +1,6 @@
 //$(document).ready(function () {
     //rotation speed and timer
-    var speed = 3500;
+    var speed = 3000;
     var slides = $('.slide');
     var container = $('#slides ul');
     var item_width = container.width();
@@ -19,7 +19,7 @@
     function rotate() {
     container.stop().animate({
         'left': item_width * -1
-        }, 1500, function () {
+        }, 500, function () {
         container.find('li:last').after(container.find('li:first'));
         resetSlides();
     });

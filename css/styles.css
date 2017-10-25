@@ -14,10 +14,11 @@ body {
     vertical-align: middle;
 }
 
-#carousel {
-    position: relative;
-    width:60%;
-    margin:0 auto;
+#logo {
+    max-width: 80%;
+    max-height: 20%;
+    margin: auto;
+    display: block;
 }
 
 #slides {
@@ -36,7 +37,7 @@ body {
     position: relative;
 }
 
- #slides li {
+#slides li {
     width:100%;
     height:250px;
     float:left;
@@ -45,39 +46,62 @@ body {
     font-family:lato, sans-serif;
 }
 
-.quote-phrase, .bahasa {
+.slide {
+    width: 40%;
+    margin: auto;
+}
+
+.quote-phrase, .bahasa, .judul {
     font-family:sans-serif;
     font-weight:300;
     display: table-cell;
     vertical-align: middle;
-    padding: 5px 20px;
-    font-family:'Lato', Calibri, Arial, sans-serif;
+    font-family: Consolas, 'Lato', Calibri, Arial, sans-serif;
 }
 
-.quote-phrase {
+.quote-phrase, .judul {
     height: 200px;
-    font-size:24px;
+    font-size: 24px;
     color:#FFF;
-    font-style:italic;
-    text-shadow:.5px 0px #b14943;  
+    text-shadow:.5px 0px #b14943;
+    text-align: center;
+    width: 40%;
+    margin: auto;   
 }
 
-.text-bahasa {
+.text-bahasa, .judul {
     color:#ffe947;
+    font-size: 30px;
 }
 
 
-.long {
-    text-align: left; 
-    padding: 0 35%;
-}
+
 
 .bahasa {
     font-style:normal;
-    font-size:20px;
+    font-size: 14px;
     color:#ffe947;
     font-weight:400;
-    height: 30px;
+
+}
+
+.bahasa-daerah, .bahasa-pemrograman {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 95px;
+  margin: 0 6px;
+  padding: 6px;
+  border: none;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  font: normal 14px "Lucida Console", Monaco, monospace;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffe947;
 }
 
 .textContainer, .bahasaContainer {
