@@ -1,29 +1,6 @@
-//bikin 15 text bahasa daerah dalam bahasa pemrograman dimasukan ke dalam array
-var arrayFullText = []; //tempat buat naruh full text
-var arraybahasaPemrograman =   ["C++",
-                                "C#",
-                                "Delphi",
-                                "HTML",
-                                "JavaScript",
-                                "JQuery",
-                                "Objective-C",
-                                "Pascal",
-                                "Perl 5",
-                                "PHP",
-                                "Phyton",
-                                "R",
-                                "Ruby",
-                                "Swift",
-                                "VB .Net"];
+var arrayFullText = ["saya","berterima","kasih","kepada","sekolahkoding","atas","ilmunya"]; //tempat buat naruh full text di setiap slide
 
-// bikin 15 full-text pake loop
-let len = arraybahasaPemrograman.length;
-for (var i = 0; i < len; i++) {
-    let text = bahasaPemrograman(arrayBahasaDaerah[i].text,arraybahasaPemrograman[i]);
-    arrayFullText.push(text) //masukin satu persatu text ke dalam array
-}
-
-// menyisipkan full text pada HTML
+// menyisipkan slide2 yang telah dibuat dalam array diatas
 for (var i = 0; i < arrayFullText.length; i++) {
     $("#slides ul").append(`<li class="slide">
         <p class="full-text">${arrayFullText[i]}</p>
@@ -33,7 +10,7 @@ for (var i = 0; i < arrayFullText.length; i++) {
 
 
 //rotation speed and timer
-var speed = 3500;
+var speed = 1500;
 var slides = $('.slide');
 var container = $('#slides ul');
 var item_width = container.width();
@@ -52,7 +29,7 @@ function resetSlides() {
 function rotate() {
 container.stop().animate({
     'left': item_width * -1
-    }, 1500, function () {
+    }, 500, function () {
     container.find('li:last').after(container.find('li:first'));
     resetSlides();
 });

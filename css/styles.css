@@ -56,12 +56,5 @@ body {
     margin: auto;
     color: yellow;
     font-family: consoles, sans-serif;
-    font-size: 24px;    
-}
-
-.full-text, .judul p {
-    margin: auto;
-    color: yellow;
-    font-family: consoles, sans-serif
-    font-size: 24px;    
+    font-size: 60px;    
 }
