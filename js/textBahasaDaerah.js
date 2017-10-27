@@ -1,8 +1,8 @@
 class BahasaDaerah {
-	constructor(text, asalDaerah) {
-		this.text = text;
-		this.asalDaerah = asalDaerah;
-	}
+    constructor(text, asalDaerah) {
+        this.text = text;
+        this.asalDaerah = asalDaerah;
+    }
 }
 
 
@@ -21,4 +21,4 @@ arrayBahasaDaerah.push(new BahasaDaerah("Jeges do kodingi... Tai ulang na bahay 
 arrayBahasaDaerah.push(new BahasaDaerah("Koding iro bueq tapi boteq meliwat","Dayak Benuaq"));
 arrayBahasaDaerah.push(new BahasaDaerah("Koding tuh baek, tapi jangan lebay","gaul Jakarta"));
 arrayBahasaDaerah.push(new BahasaDaerah("Koding luwung nanging de bes-bes","Bali"));
-arrayBahasaDaerah.push(new BahasaDaerah("Koding itu bagus, tapi jangan berlebihan","Bahasa Indonesia"));
+arrayBahasaDaerah.push(new BahasaDaerah("Koding itu bagus, tapi jangan berlebihan","Bahasa Indonesia"));    
