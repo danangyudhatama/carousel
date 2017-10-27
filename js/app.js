@@ -102,7 +102,7 @@ function bahasaPemrograman(sisipanString, namaBahasa) {
                 return `Writeln('${string}');`;
                 break;
             case "HTML":
-                return `<h1>${string}</h1>`;
+                return `&lt;h1&gt;${string}&lt;/h1&gt;`;
                 break;
             case "JavaScript":
                 return `document.write('${string}');`;
