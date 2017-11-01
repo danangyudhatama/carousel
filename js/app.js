@@ -4,7 +4,13 @@ let longTextLanguage =      ["C++",
                             "Delphi",
                             "Objective-C",
                             "Pascal",
-                            "Java"];
+                            "Java",
+                            "Scala",
+                            "Go",
+                            "PL/SQL",
+                            "Algol-60",
+                            "Fortran",
+                            "Cobra"];
 
 let shortTextLanguage =     ["HTML",
                             "Javascript",
@@ -13,12 +19,19 @@ let shortTextLanguage =     ["HTML",
                             "PHP",
                             "Phyton",
                             "Ruby",
-                            "Swift"];
+                            "Swift",
+                            "MATLAB",
+                            "Julia",
+                            "R",
+                            "Basic",
+                            "DOS",
+                            "Haskell"];
 
 // bikin pake loop
 let len1 = longTextLanguage.length;
 for (var i = 0; i < len1; i++) {
-    let text = bahasaPemrograman(arrayBahasaDaerah[i].text,longTextLanguage[i]);
+	let editedTextBhs = `<span class="text-bahasa">${arrayBahasaDaerah[i].text}</span>`; //nambahin Tag Span ke text bahasa
+    let text = bahasaPemrograman(editedTextBhs,longTextLanguage[i]);
     arrayFullText.push(text) //masukin satu persatu text ke dalam array
         $("#slides ul").append(`<li class="slide">
                 <div class="full-text">${arrayFullText[i]}</div>
@@ -31,7 +44,8 @@ for (var i = 0; i < len1; i++) {
 arrayFullText = []; // kosongin array
 let len2 = shortTextLanguage.length;
 for (var i = 0; i < len2; i++) {
-    let text = bahasaPemrograman(arrayBahasaDaerah[i+len1].text,shortTextLanguage[i]);
+	let editedTextBhs = `<span class="text-bahasa">${arrayBahasaDaerah[i+len1].text}</span>`; //nambahin Tag Span ke text bahasa
+    let text = bahasaPemrograman(editedTextBhs,shortTextLanguage[i]);
     arrayFullText.push(text) //masukin satu persatu text ke dalam array
         $("#slides ul").append(`<li class="slide">
                 <div class="full-text short">${arrayFullText[i]}</div>

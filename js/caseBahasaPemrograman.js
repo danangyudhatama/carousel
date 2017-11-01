@@ -7,7 +7,7 @@ var bahasaPemrograman = function(sisipanString, namaBahasa) {
 			case "C++":
 				return `#include <br>
 						int main() { <br>
-						&emsp;    std::cout << "<span class="text-bahasa">${string}</span>"; <br>
+						&emsp;    std::cout << "${string}"; <br>
 						&emsp;    return 0; <br>
 						}`;
 				break;
@@ -15,65 +15,65 @@ var bahasaPemrograman = function(sisipanString, namaBahasa) {
 				return `using System; <br>
 						class Program { <br>
 						&emsp;	public static void Main(string[ ] args) { <br>
-						&emsp;	Console.WriteLine("<span class="text-bahasa">${string}</span>"); <br>
+						&emsp;	Console.WriteLine("${string}"); <br>
 						&emsp;	} <br>
 						}`;
 				break;
 			case "Delphi":
 				return `program bahasaDaerah; <br>
 						begin <br>
-						&emsp;	Writeln('<span class="text-bahasa">${string}</span>'); <br>
+						&emsp;	Writeln('${string}'); <br>
 						end.`;
 				break;
 			case "HTML":
-				return `&lt;h1&gt;<span class="text-bahasa">${string}</span>&lt;/h1&gt;`;
+				return `&lt;h1&gt;${string}&lt;/h1&gt;`;
 				break;
 			case "Javascript":
-				return `document.write('<span class="text-bahasa">${string}</span>');`;
+				return `document.write('${string}');`;
 				break;
 			case "JQuery":
-				return `$("body").append("<span class="text-bahasa">${string}</span>");`;
+				return `$("body").append("${string}");`;
 				break;
 			case "Objective-C":
 				return `#import <br>
 						#import <br>
 						int main(void) { <br>
-						&emsp;	NSLog(@"<span class="text-bahasa">${string}</span>"); <br>
+						&emsp;	NSLog(@"${string}"); <br>
 						&emsp;	return 0; <br>
 						}`;
 				break;
 			case "Pascal":
 				return `program bahasaDaerah; <br>
 						begin <br>
-						&emsp;	writeln('<span class="text-bahasa">${string}</span>'); <br>
+						&emsp;	writeln('${string}'); <br>
 						end.`;
 				break;
 			case "Perl 5":
-				return `print "<span class="text-bahasa">${string}</span>";`;
+				return `print "${string}";`;
 				break;
 			case "PHP":
-				return `&lt;?php echo '<span class="text-bahasa">${string}</span>'; ?&gt;`;
+				return `&lt;?php echo '${string}'; ?&gt;`;
 				break;
 			case "Phyton":
-				return `print "<span class="text-bahasa">${string}</span>"`;
+				return `print "${string}"`;
 				break;
 			case "Java":
 				return `public class bahasaDaerah { <br>
 					    &emsp;	public static void main(String[] args) { <br>
-					    &emsp; 	System.out.println("<span class="text-bahasa">${string}</span>"); <br>
+					    &emsp; 	System.out.println("${string}"); <br>
 					    &emsp;	} <br>
 						}`;
 				break;
 			case "Ruby":
-				return `puts "<span class="text-bahasa">${string}</span>"`;
+				return `puts "${string}"`;
 				break;
 			case "Swift":
-				return `println("<span class="text-bahasa">${string}</span>")`;
+				return `println("${string}")`;
 				break;
 			case "VB .Net":
 				return `Module Module1 <br>
 						&emsp;	Sub Main() <br>
-						&emsp;  &emsp;	Console.WriteLine("<span class="text-bahasa">${string}</span>") <br>
+						&emsp;  &emsp;	Console.WriteLine("${string}") <br>
 						&emsp;	End Sub <br>
 						End Module`;
 				break;
@@ -126,6 +126,11 @@ var bahasaPemrograman = function(sisipanString, namaBahasa) {
 				break;
 			case "Haskell":
 				return `main = do putStrLn "${string}"`;
+				break;
+			case "Cobra":
+				return `class bahasaDaerah
+						&emsp;    def main
+						&emsp; &emsp;	print '${string}'`;
 				break;
 		};
 	
