@@ -77,7 +77,56 @@ var bahasaPemrograman = function(sisipanString, namaBahasa) {
 						&emsp;	End Sub <br>
 						End Module`;
 				break;
-
+			case "Scala":
+				return `object bahasaDaerah { <br>
+  						&emsp;	def main(args: Array[String]): Unit = { <br>
+    					&emsp; &emsp;	println("${string}") <br>
+						&emsp;	} <br>
+						}`;
+				break;
+			case "MATLAB":
+				return `disp('${string}')`;
+				break;
+			case "Go":
+				return `package main <br>
+						import "fmt" <br>
+						func main() { <br>
+						&emsp;    fmt.Println("${string}") <br>
+						}`;
+				break;
+			case "Julia":
+				return `println("${string}")`;
+				break;
+			case "R":
+				return `print("${string}")`;
+				break;
+			case "PL/SQL":
+				return `begin <br>
+						dbms_output.put_line('${string}'); <br>
+						end; <br>
+						/`;
+				break;
+			case "Algol-60":
+				return `begin  <br>
+						&emsp;	file rmt (kind = remote);  <br>
+						&emsp;	write(rmt, <"${string}">);  <br>
+						end.`;
+				break;
+			case "Basic":
+				return `10 PRINT "${string}"`;
+				break;
+			case "DOS":
+				return `echo ${string}`;
+				break;
+			case "Fortran":
+				return `PROGRAM HELLOWORLD <br>
+						10 FORMAT (1X,11H${string}) <br>
+						WRITE(6,10)  <br>
+						END`;
+				break;
+			case "Haskell":
+				return `main = do putStrLn "${string}"`;
+				break;
 		};
 	
 }
